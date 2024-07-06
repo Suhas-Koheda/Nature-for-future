@@ -324,6 +324,7 @@ input, #card-element {
     .Outer {
         padding: 1rem;
         flex-direction: column;
+        height: auto;
     }
     .Inner {
         padding: 2rem;
