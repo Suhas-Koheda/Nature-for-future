@@ -4,7 +4,7 @@
 }
 
 .Animation:after {
-    display: inline;
+    display: block;
     position: relative;
     width: 100%;
     color: var(--accent-clr);
@@ -13,13 +13,6 @@
 }
 
 @-webkit-keyframes Namechanger {
-    0% { content: 'Environmental Sustainability'; }
-    40% { content: 'And are based Upon'; }
-    75% { content: 'Sustainable Development Goals 7 and 13'; }
-    100% { content: 'Environmental Sustainability'; }
-}
-
-@keyframes Namechanger {
     0% { content: 'Environmental Sustainability'; }
     40% { content: 'And are based Upon'; }
     75% { content: 'Sustainable Development Goals 7 and 13'; }
