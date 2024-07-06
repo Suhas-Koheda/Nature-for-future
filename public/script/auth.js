@@ -3,16 +3,10 @@ import passport from 'passport';
 import session from 'express-session';
 import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
 import dotenv from 'dotenv';
-import { fileURLToPath } from 'url';
-import path from 'path';
 
 dotenv.config();
 
 const app = express();
-
-// Define __dirname for ES modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 // Configure session
 app.use(session({
@@ -32,7 +26,6 @@ passport.use(new GoogleStrategy({
         callbackURL: 'http://localhost:3000/auth/google/callback',
     },
     (accessToken, refreshToken, profile, done) => {
-        // Here you can save user info to the database if needed
         return done(null, profile);
     }
 ));
@@ -74,17 +67,8 @@ app.get('/logout', (req, res) => {
     });
 });
 
-// Serve static files
-app.use(express.static('public'));
-
-// Serve the join page
 app.get('/templates/join.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/templates/join.html'));
-});
-
-// Serve the index page
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/templates/index.html'));
+    res.send('<a href="/auth/google">Login with Google</a>');
 });
 
 const PORT = process.env.PORT || 3000;

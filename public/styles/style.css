@@ -49,7 +49,10 @@ body {
     height: 99vh;
     background-color: var(--sec-clr);
 }
-
+.other-Page {
+    height: auto;
+    background-color: var(--sec-clr);
+}
 .Nav-bar {
     width: auto;
     font-size: large;
@@ -110,6 +113,16 @@ footer{
 .Footer-text{
     text-align: center;
     padding: 1rem;
+    color: var(--text-color) ;
+}
+.footer-holder{
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-color) ;
+}
+.Footer-text a{
+    color: var(--text-color) ;
+    text-decoration: none;
 }
 .footer-section.copyright {
     text-align: center;
@@ -117,6 +130,16 @@ footer{
     color: var(--text-color);
     margin-top: 30px;
 }
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
 
 .cta-button {
     display: inline-block;
@@ -130,6 +153,23 @@ footer{
 
 .cta-button:hover {
     background-color: #333; /* Darker color on hover */
+}
+.Outer{
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem;
+    background-color: #44AC3B;
+}
+.Inner a{
+    text-decoration: none;
+    color: var(--text-color) ;
 }
 @media only screen and (max-width: 600px) {
     footer{
@@ -210,6 +250,25 @@ footer{
     .Intro-holder-inner {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+    }
+    .Outer{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .Inner{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        padding: 3rem;
+        background-color: #44AC3B;
+        width: 40dvw;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: row;
         justify-content: center;
     }
 }
