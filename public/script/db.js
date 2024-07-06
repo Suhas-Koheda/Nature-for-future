@@ -24,17 +24,7 @@ async function createDatabase(name, email, message) {
         console.error(err);
     }
 }
-
-async function authenticateUser() {
-    try {
-        // Generate OAuth URL for authentication
-        const oauthUrl = await oauth.getAuthorizationUrl(); // Adjust this line based on your OAuth library
-        window.location.href = oauthUrl; // Redirect to OAuth login
-    } catch (err) {
-        console.error('OAuth Authentication Error:', err);
-    }
-}
-
+export createdatabase = createDatabase();
 form.addEventListener('submit', async function(event) {
     event.preventDefault();
 
@@ -46,21 +36,15 @@ form.addEventListener('submit', async function(event) {
     console.log('Email:', email);
     console.log('Message:', message);
 
-    try {
-        // Check if user is authenticated (you need to implement your own check)
-        const isAuthenticated = ensureAuthenticated()/* logic to check if user is authenticated */;
-        if (isAuthenticated) {
-            await createDatabase(name, email, message);
-        } else {
-            await authenticateUser(); // Redirect to OAuth provider
-        }
-    } catch (err) {
-        console.error('Error handling form submission:', err);
-    }
-});
-app.get('/profile', (req, res) => {
-    if (!req.isAuthenticated()) {
-        return res.redirect('/');
-    }
-    res.send(`Hello, ${req.user.displayName}`);
+    // try {
+    //     // Check if user is authenticated (you need to implement your own check)
+    //     const isAuthenticated = /* logic to check if user is authenticated */;
+    //     if (isAuthenticated) {
+    //         await createDatabase(name, email, message);
+    //     } else {
+    //         await authenticateUser(); // Redirect to OAuth provider
+    //     }
+    // } catch (err) {
+    //     console.error('Error handling form submission:', err);
+    // }
 });

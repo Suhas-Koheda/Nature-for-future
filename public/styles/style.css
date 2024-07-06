@@ -39,7 +39,6 @@
     justify-content: center;
 }
 
-
 body {
     font-family: 'Lora', sans-serif;
     color: var(--text-color);
@@ -75,7 +74,7 @@ body {
     text-decoration: none;
     display: block;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .Nav-bar-holder-r {
@@ -139,8 +138,12 @@ footer{
     border-radius: 4px;
     text-decoration: none;
 }
-
-
+.google-login{
+    color: var(--text-color);
+    font-weight: bold;
+    font-family: 'Lora', sans-serif;
+    font-size: x-large;
+}
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
@@ -165,6 +168,15 @@ footer{
     flex-direction: column;
     justify-content: center;
     padding: 6rem;
+    background-color: var(--accent-clr);
+}
+.Inner-Host a{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem;
+    color: var(--text-color);
     background-color: #44AC3B;
 }
 .Inner a{
@@ -193,7 +205,6 @@ footer{
     .Nav-bar-wrapper{
         display: flex;
         flex-direction: column;
-
         background-color: var(--sec-clr);
     }
     .Nav-bar {
@@ -210,8 +221,8 @@ footer{
         font-size: 1rem;
         font-family: 'Lora', sans-serif;
         text-decoration: none;
-        padding: 4%;
-        margin-top: 0vh;
+        padding: 0.2rem;
+        margin-top: 1vh;
     }
 
     body {
