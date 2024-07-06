@@ -97,6 +97,7 @@ body {
     .Nav-bar-wrapper{
         display: flex;
         flex-direction: column;
+
         background-color: var(--sec-clr);
     }
     .Nav-bar {
