@@ -1,55 +1,64 @@
 @font-face {
-    font-family: 'Lora'; /*a name to be used later*/
-    src: url('../fonts/Lora-VariableFont_wght.ttf'); /*URL to font*/
+    font-family: 'Lora'; /* A name to be used later */
+    src: url('../fonts/Lora-VariableFont_wght.ttf'); /* URL to font */
 }
-@keyframes Namechanger {
-    0%{content:'Environmental Sustainability';}
-    40%{content:'And are based Upon';}
-    75%{content:'Sustainable Development Goals 7 and 13';}
-    100%{content:'Environmental Sustainability';}
-}
-.Animation:after{
+
+.Animation:after {
     display: inline;
-    position:relative;
+    position: relative;
     width: 100%;
     color: var(--accent-clr);
     content: 'Environmental Sustainability';
     animation: Namechanger 5s infinite;
 }
-.Intro-holder{
+
+@keyframes Namechanger {
+    0% { content: 'Environmental Sustainability'; }
+    40% { content: 'And are based Upon'; }
+    75% { content: 'Sustainable Development Goals 7 and 13'; }
+    100% { content: 'Environmental Sustainability'; }
+}
+
+.Intro-holder {
     height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
 }
-.Intro-holder-inner{
+
+.Intro-holder-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 :root {
     --bg-color: #FFF5EE;
-    --text-color: #000000 ;
-    --sec-clr:  #F5F5F5;
-    --accent-clr:#FF5722 ;
+    --text-color: #000000;
+    --sec-clr: #F5F5F5;
+    --accent-clr: #FF5722;
 }
-body{
+
+body {
     font-family: 'Lora', sans-serif;
     color: var(--text-color);
 }
-.Main-Page{
-    height: 97dvh;
-    background-color:var(--sec-clr);
+
+.Main-Page {
+    height: 97vh;
+    background-color: var(--sec-clr);
 }
-.Nav-bar{
+
+.Nav-bar {
     width: auto;
     font-size: large;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.Nav-bar-content{
+
+.Nav-bar-content {
     color: var(--text-color);
     width: auto;
     overflow: hidden;
@@ -57,22 +66,27 @@ body{
     font-weight: 600;
     display: block;
 }
-.Nav-bar-content-holder{
+
+.Nav-bar-content-holder {
     margin-top: 0%;
     text-decoration: none;
     display: block;
     text-align: center;
 }
-.Nav-bar-holder-r{
+
+.Nav-bar-holder-r {
     display: none;
 }
-.Nav-bar-icon{
+
+.Nav-bar-icon {
     opacity: 0;
 }
+
 @media only screen and (max-width: 600px) {
-    .Home-Logo{
-        height: 20dvh;
+    .Home-Logo {
+        height: 20vh;
     }
+
     .Nav-bar {
         display: none;
         height: 100vh;
@@ -84,7 +98,7 @@ body{
     .Nav-bar-content-holder {
         display: flex;
         justify-content: center;
-        font-size: 19vm;
+        font-size: 1.9rem;
         font-family: 'Lora', sans-serif;
         text-decoration: none;
         padding: 4%;
@@ -114,5 +128,19 @@ body{
         height: 10vw;
         margin-top: 6%;
         z-index: 1;
+    }
+
+    .Intro-holder {
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Intro-holder-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
