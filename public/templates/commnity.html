@@ -2,27 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nature for Future</title>
+    <title>Community Forums - Nature for Future</title>
     <link rel="stylesheet" href="/styles/style.css">
     <script src="/script/script.js"></script>
 </head>
 <body>
-<div class="Main-Page">
+<div class="Main-Page" style="height: auto">
     <button class="Nav-bar-icon">
         <img src="https://img.icons8.com/?size=50&id=120374&format=png" alt="" class="Nav-bar-icon-image">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </button>
     <div class="Nav-bar-wrapper">
         <a href="/templates/index.html"><img src="/Logo/Frame%203.svg" alt="Nature for Future" class="Home-Logo"></a>
         <div class="Nav-bar">
-            <div class="Nav-bar-content-holder"><a href="/templates/about.html" class="Nav-bar-content" >About</a></div>
-            <div class="Nav-bar-content-holder"><a href="/templates/events.html" class="Nav-bar-content" >Events</a></div>
-            <div  class="Nav-bar-content-holder"><a href="/templates/commnity.html" class="Nav-bar-content" >Community Forums</a></div>
-            <div class="Nav-bar-content-holder"><a href="/templates/donation.html" class="Nav-bar-content" >Donation Opportunities</a></div>
-            <div class="Nav-bar-content-holder"><a href="/templates/network.html" class="Nav-bar-content" >Networking and Collaborations</a> </div>
+            <div class="Nav-bar-content-holder"><a href="/templates/about.html" class="Nav-bar-content">About</a></div>
+            <div class="Nav-bar-content-holder"><a href="/templates/events.html" class="Nav-bar-content">Events</a></div>
+            <div class="Nav-bar-content-holder"><a href="/templates/community.html" class="Nav-bar-content">Community Forums</a></div>
+            <div class="Nav-bar-content-holder"><a href="/templates/donation.html" class="Nav-bar-content">Donation Opportunities</a></div>
+        </div>
+    </div>
+    <div class="Community-Forums">
+        <div class="Forum-Header">
+            <h1>Community Forums</h1>
+            <p>Welcome to the Community Forums! Engage with other environmental enthusiasts, share ideas, and collaborate on sustainability projects.</p>
+        </div>
+
+        <div class="Forum-Categories">
+            <h2>Forum Categories</h2>
+            <ul>
+                <li><a href="#general-discussion">General Discussion</a></li>
+                <li><a href="#sustainable-living">Sustainable Living</a></li>
+                <li><a href="#events-and-meetups">Events and Meetups</a></li>
+                <li><a href="#volunteering">Volunteering Opportunities</a></li>
+            </ul>
+        </div>
+
+        <div class="Forum-Threads">
+            <h2>Recent Threads</h2>
+            <div class="Thread">
+                <h3><a href="#thread-1">How can we reduce plastic waste in our community?</a></h3>
+                <p>Started by <strong>Unknown</strong> on <em>December 26, 2023</em></p>
+            </div>
+            <div class="Thread">
+                <h3><a href="#thread-2">Upcoming Sustainability Workshop</a></h3>
+                <p>Started by <strong>Haas</strong> on <em>July 21, 2023</em></p>
+
+            </div>
+            <!-- Add more threads here -->
+        </div>
+
+        <div class="Post-Thread">
+            <h2>Post a New Thread</h2>
+            <form action="/submit-thread" method="POST">
+                <label for="thread-title">Title:</label>
+                <input type="text" id="thread-title" name="title" required>
+
+                <label for="thread-content">Content:</label>
+                <textarea id="thread-content" name="content" rows="6" required></textarea>
+
+                <button type="submit">Post Thread</button>
+            </form>
         </div>
     </div>
 </div>
 <!--nav bar ends here-->
+
+<footer>
+    <div class="footer-holder">
+        <div class="Image-Holder">
+            <img src="/Logo/Frame%204.svg" alt="Footer Logo">
+        </div>
+        <div class="Footer-text">
+            <h3><a href="/templates/about.html">About Us</a></h3>
+            <h4><a href="/templates/events.html">Events</a></h4>
+            <h4><a href="/templates/community.html">Community</a></h4>
+            <h4><a href="/templates/donation.html">Donation Opportunities</a></h4>
+            <h4><a href="/templates/networking.html">Networking</a></h4>
+        </div>
+        <div class="Footer-text">
+            <h3><a href="mailto:info@natureforfuture.org">Email Us</a></h3>
+            <h3><a href="/subscribe">Sign up for our Newsletter</a></h3>
+        </div>
+        <div class="Footer-text">
+            <p>&copy; 2024 Nature for Future. All rights reserved.</p>
+        </div>
+        <div class="footer-text">
+            <h3>Join Our Movement</h3>
+            <p>Be a part of our community and help us make a difference in environmental sustainability. Sign up now to get involved!</p>
+            <a href="/join-us" class="cta-button">Join Us</a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

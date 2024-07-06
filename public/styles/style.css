@@ -159,6 +159,7 @@ footer{
 }
 .Outer{
     padding: 5rem;
+    height: 60dvh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -177,12 +178,69 @@ footer{
     justify-content: center;
     padding: 6rem;
     color: var(--text-color);
-    background-color: #44AC3B;
+    color: var(--accent-clr);
 }
 .Inner a{
     text-decoration: none;
     color: var(--text-color) ;
 }
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.donation-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, #card-element {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--accent-clr);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #2057A9;
+}
+
+#card-errors {
+    color: red;
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 600px) {
     footer{
         background-color: #C6E0C3;
@@ -209,7 +267,7 @@ footer{
     }
     .Nav-bar {
         display: none;
-        height: 100vh;
+        height: 70vh;
         flex-direction: column;
         justify-content: space-between;
         position: sticky;
@@ -274,7 +332,7 @@ footer{
         justify-content: center;
         text-align: center;
         padding: 3rem;
-        background-color: #44AC3B;
+        color: var(--accent-clr);
         width: 40dvw;
     }
     .wrapper{

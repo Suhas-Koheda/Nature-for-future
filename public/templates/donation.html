@@ -2,27 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nature for Future</title>
+    <title>Nature for Future - Donate</title>
     <link rel="stylesheet" href="/styles/style.css">
-    <script src="/script/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="/script/script.js" defer></script>
 </head>
 <body>
 <div class="Main-Page">
     <button class="Nav-bar-icon">
         <img src="https://img.icons8.com/?size=50&id=120374&format=png" alt="" class="Nav-bar-icon-image">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </button>
     <div class="Nav-bar-wrapper">
         <a href="/templates/index.html"><img src="/Logo/Frame%203.svg" alt="Nature for Future" class="Home-Logo"></a>
         <div class="Nav-bar">
-            <div class="Nav-bar-content-holder"><a href="/templates/about.html" class="Nav-bar-content" >About</a></div>
-            <div class="Nav-bar-content-holder"><a href="/templates/events.html" class="Nav-bar-content" >Events</a></div>
-            <div  class="Nav-bar-content-holder"><a href="/templates/commnity.html" class="Nav-bar-content" >Community Forums</a></div>
-            <div class="Nav-bar-content-holder"><a href="/templates/donation.html" class="Nav-bar-content" >Donation Opportunities</a></div>
-            <div class="Nav-bar-content-holder"><a href="/templates/network.html" class="Nav-bar-content" >Networking and Collaborations</a> </div>
+            <div class="Nav-bar-content-holder"><a href="/templates/about.html" class="Nav-bar-content">About</a></div>
+            <div class="Nav-bar-content-holder"><a href="/templates/events.html" class="Nav-bar-content">Events</a></div>
+            <div class="Nav-bar-content-holder"><a href="/templates/commnity.html" class="Nav-bar-content">Community Forums</a></div>
+            <div class="Nav-bar-content-holder"><a href="/templates/donation.html" class="Nav-bar-content">Donation Opportunities</a></div>
+        </div>
+    </div>
+    <!-- Navbar ends here -->
+
+    <div class="container">
+        <header>
+            <img src="/Logo/Frame%203Big.svg" alt="Nature for Future" class="logo">
+            <h1>Support Nature for Future</h1>
+            <p>Your donations help us protect the environment and promote sustainability.</p>
+        </header>
+
+        <div class="donation-form">
+            <form id="donation-form">
+                <div class="form-group">
+                    <label for="donation-amount">Donation Amount</label>
+                    <input type="number" id="donation-amount" name="donation-amount" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="card-element">Credit or Debit Card</label>
+                    <div id="card-element"></div>
+                    <div id="card-errors" role="alert"></div>
+                </div>
+
+                <button type="submit" id="submit-button" class="button">Donate</button>
+            </form>
         </div>
     </div>
 </div>
-<!--nav bar ends here-->
 </body>
 </html>
