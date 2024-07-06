@@ -16,7 +16,7 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/templates/index.html'));
+    res.sendFile(path.join(__dirname, '/public/templates/index.html'));
 });
 
 const PORT = process.env.PORT || 3000;
