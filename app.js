@@ -13,7 +13,15 @@ const app = express();
 // Define __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+// Serve the index page
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/templates/index.html'));
+});
 
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
 // Configure session
 app.use(session({
     secret: 'your_secret_key',
@@ -80,14 +88,4 @@ app.use(express.static('public'));
 // Serve the join page
 app.get('/templates/join.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/templates/join.html'));
-});
-
-// Serve the index page
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/templates/index.html'));
-});
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
 });
