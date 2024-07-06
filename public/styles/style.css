@@ -321,23 +321,17 @@ input, #card-element {
         flex-direction: column;
         justify-content: center;
     }
-    .Outer{
-        display: flex;
+    .Outer {
+        padding: 1rem;
         flex-direction: column;
-        justify-content:center;
     }
-    .Inner{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        padding: 3rem;
-        color: var(--accent-clr);
-        width: 40dvw;
+    .Inner {
+        padding: 2rem;
+        flex-direction: column;
     }
     .wrapper{
         display: flex;
-        flex-direction: row;
+        flex-direction:column;
         justify-content: center;
     }
 }
