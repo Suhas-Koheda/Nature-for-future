@@ -84,9 +84,8 @@ body {
 
 @media only screen and (max-width: 600px) {
     .Home-Logo {
-        height: 20vh;
+        height: 15vh;
     }
-
     .Nav-bar {
         display: none;
         height: 100vh;
