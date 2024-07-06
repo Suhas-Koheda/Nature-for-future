@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navBarIcon = document.querySelector(".Nav-bar-icon");
     const navBarR = document.querySelector(".Nav-bar");
+    const viewportWidth = window.innerWidth;
 
     if (navBarIcon && navBarR) {
         navBarIcon.style.position = "fixed";
@@ -17,25 +18,5 @@ document.addEventListener('DOMContentLoaded', function() {
                 navBarR.style.color = "#e6f3ff";
             }
         }
-    }
-    const animationElement = document.querySelector('.Animation');
-
-    if (animationElement) {
-        const texts = [
-            'Environmental Sustainability',
-            'And are based Upon',
-            'Sustainable Development Goals 7 and 13',
-            'Environmental Sustainability'
-        ];
-        animationElement.style.color="#FF5722";
-        let index = 0;
-
-        function changeText() {
-            animationElement.textContent = texts[index];
-            index = (index + 1) % texts.length;
-        }
-
-        changeText();
-        setInterval(changeText, 2000); // Change text every 5 seconds
     }
 });
