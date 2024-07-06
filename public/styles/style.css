@@ -90,6 +90,7 @@ body {
     padding: 10px;
 }
 footer{
+    position: relative;
     background-color: #C6E0C3;
     display: flex;
     flex-direction: column;
@@ -117,7 +118,7 @@ footer{
     margin-top: 30px;
 }
 
-.footer-section.call-to-action .cta-button {
+.cta-button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -127,7 +128,7 @@ footer{
     text-decoration: none;
 }
 
-.footer-section.call-to-action .cta-button:hover {
+.cta-button:hover {
     background-color: #333; /* Darker color on hover */
 }
 @media only screen and (max-width: 600px) {
