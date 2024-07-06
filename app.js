@@ -1,4 +1,3 @@
-
 import express from 'express';
 import passport from 'passport';
 import session from 'express-session';
@@ -10,6 +9,7 @@ import path from 'path';
 dotenv.config();
 
 const app = express();
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -19,9 +19,8 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/templates/index.html'));
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
 });
 
 app.use(session({
