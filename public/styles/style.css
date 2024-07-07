@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Lora'; /* A name to be used later */
-    src: url('../fonts/Lora-VariableFont_wght.ttf'); /* URL to font */
+    font-family: 'Lora';
+    src: url('../fonts/Lora-VariableFont_wght.ttf');
 }
 :root {
     --bg-color: #FFF5EE;
@@ -17,7 +17,7 @@
     content: 'Environmental Sustainability';
     animation: Namechanger 5s infinite;
 }
-#donation{
+#donation {
     height: auto;
     background-color: var(--sec-clr);
 }
@@ -45,13 +45,12 @@
 body {
     font-family: 'Lora', sans-serif;
     color: var(--text-color);
-    overflow-y:auto ;
+    overflow-y: auto;
 }
 
 .Main-Page {
     height: 99vh;
     background-color: var(--sec-clr);
-
 }
 .other-Page {
     height: auto;
@@ -96,36 +95,36 @@ body {
     justify-content: space-between;
     padding: 10px;
 }
-footer{
+footer {
     position: relative;
     background-color: #C6E0C3;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.footer-holder{
+.footer-holder {
     display: flex;
     padding: 2rem;
     flex-direction: row;
     justify-content: space-evenly;
 }
-.Image-Holder{
+.Image-Holder {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.Footer-text{
+.Footer-text {
     text-align: center;
     padding: 1rem;
-    color: var(--text-color) ;
+    color: var(--text-color);
 }
-.footer-holder{
+.footer-holder {
     text-align: center;
     padding: 1rem;
-    color: var(--text-color) ;
+    color: var(--text-color);
 }
-.Footer-text a{
-    color: var(--text-color) ;
+.Footer-text a {
+    color: var(--text-color);
     text-decoration: none;
 }
 .footer-section.copyright {
@@ -143,42 +142,27 @@ footer{
     border-radius: 4px;
     text-decoration: none;
 }
-.google-login{
-    color: var(--text-color);
-    font-weight: bold;
-    font-family: 'Lora', sans-serif;
-    font-size: x-large;
-}
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #000;
-    border-radius: 4px;
-    text-decoration: none;
-}
 
 .cta-button:hover {
-    background-color: #333; /* Darker color on hover */
+    background-color: #333;
 }
-.Outer{
+.Outer {
     padding: 5rem;
     height: 60dvh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-border-radius: 2%;
+    border-radius: 2%;
 }
-.Inner{
+.Inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 6rem;
     background-color: var(--accent-clr);
-border-radius: 4%;
+    border-radius: 4%;
 }
-.Inner-Host a{
+.Inner-Host a {
     display: flex;
     text-decoration: none;
     flex-direction: column;
@@ -187,11 +171,10 @@ border-radius: 4%;
     color: var(--text-color);
     color: var(--accent-clr);
 }
-.Inner a{
+.Inner a {
     text-decoration: none;
-    color: var(--text-color) ;
+    color: var(--text-color);
 }
-
 
 .container {
     max-width: 600px;
@@ -206,17 +189,17 @@ border-radius: 4%;
     width: 100px;
     margin-bottom: 10px;
 }
-.Footer-text a{
+.Footer-text a {
     color: var(--accent-clr);
 }
-.Footer-div{
+.Footer-div {
     position: sticky;
     bottom: 0;
     background-color: #f1f1f1;
     padding: 10px;
     text-align: center;
     border-top: 1px solid #ccc;
-    z-index: 1000; /* Ensure it is on top of other elements */
+    z-index: 1000;
     transition: transform 0.3s ease-in-out;
 }
 .donation-form {
@@ -260,7 +243,7 @@ input, #card-element {
     color: red;
     margin-top: 10px;
 }
-.vertical{
+.vertical {
     display: flex;
     position: sticky;
     top: 0;
@@ -274,17 +257,17 @@ input, #card-element {
     box-shadow: 8px 8px 10px #44AC3B;
 }
 @media only screen and (max-width: 600px) {
-    footer{
+    footer {
         background-color: #C6E0C3;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-    .Footer-text{
+    .Footer-text {
         border-radius: 3px;
         border-color: black;
     }
-    .footer-holder{
+    .footer-holder {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -292,7 +275,7 @@ input, #card-element {
     .Home-Logo {
         height: 15vh;
     }
-    .Nav-bar-wrapper{
+    .Nav-bar-wrapper {
         display: flex;
         flex-direction: column;
         background-color: var(--sec-clr);
@@ -358,16 +341,16 @@ input, #card-element {
         padding: 1rem;
         flex-direction: column;
         height: auto;
-border-radius: 2%;
+        border-radius: 2%;
     }
     .Inner {
         padding: 2rem;
         flex-direction: column;
-border-radius: 2%;
+        border-radius: 2%;
     }
-    .wrapper{
+    .wrapper {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         justify-content: center;
     }
 }
