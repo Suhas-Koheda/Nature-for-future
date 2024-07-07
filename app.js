@@ -65,7 +65,7 @@ app.get('/profile', (req, res) => {
     if (!req.isAuthenticated()) {
         return res.redirect('/');
     }
-    res.send(`Hello, ${req.user.displayName}`);
+    res.sendFile(path.join(__dirname, 'public/templates/add.html'));
 });
 
 app.get('/logout', (req, res) => {
