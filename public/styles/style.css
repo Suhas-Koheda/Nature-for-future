@@ -165,6 +165,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+border-radius: 2%;
 }
 .Inner{
     display: flex;
