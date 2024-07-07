@@ -204,18 +204,14 @@ footer{
     color: var(--accent-clr);
 }
 .Footer-div{
-    position: fixed;
+    position: sticky;
     bottom: 0;
-    width: 100%;
     background-color: #f1f1f1;
     padding: 10px;
     text-align: center;
     border-top: 1px solid #ccc;
     z-index: 1000; /* Ensure it is on top of other elements */
     transition: transform 0.3s ease-in-out;
-}
-.footer-visible.Footer-div{
-    transform: translateY(100%);
 }
 .donation-form {
     margin-top: 20px;

@@ -117,12 +117,9 @@
     </main>
 
     <footer>
-        <div class="Footer-div">
-            <p>Stay Connected! Follow us on social media.</p>
-        </div>
         <div class="footer-holder">
             <div class="Image-Holder">
-                <img src="/Logo/Frame%204.svg" alt="Nature for Future Logo">
+                <img src="/Logo/Frame%204.svg">
             </div>
             <div class="Footer-text">
                 <h3>Navigation Links</h3>
@@ -139,19 +136,15 @@
             <div class="Footer-text">
                 <p>&copy; 2024 Nature for Future. All rights reserved.</p>
             </div>
-            <div class="Footer-text">
+            <div class="footer-text">
                 <h3>Join Our Movement</h3>
                 <p>Be a part of our community and help us make a difference in environmental sustainability. Sign up now to get involved!</p>
                 <a href="/join-us" class="cta-button">Join Us</a>
             </div>
         </div>
     </footer>
-</div>
-
-<!-- Inline script to pass server-side variable to client-side -->
-<script>
-    window.userName = "<%= user.name %>";
-    window.userEmail = "<%= user.email %>";
-</script>
+    <div class="Footer-div">
+        <p>Stay Connected! Follow us on social media.</p>
+    </div>
 </body>
 </html>
