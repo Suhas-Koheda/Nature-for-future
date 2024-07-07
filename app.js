@@ -19,8 +19,12 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/templates/index.html'));
 });
 
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});
+
 app.use(session({
-    secret: process.env.SESSION_SECRET || 'your_secret_key',
+    secret: 'your_secret_key',
     resave: false,
     saveUninitialized: true,
 }));
@@ -31,9 +35,7 @@ app.use(passport.session());
 passport.use(new GoogleStrategy({
         clientID: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        callbackURL: process.env.NODE_ENV === 'production'
-            ? 'https://nature-for-future-production.up.railway.app/auth/google/callback'
-            : 'http://localhost:3000/auth/google/callback',
+        callbackURL: 'http://localhost:3000/auth/google/callback',
     },
     (accessToken, refreshToken, profile, done) => {
         return done(null, profile);
@@ -77,8 +79,4 @@ app.get('/logout', (req, res) => {
 
 app.get('/templates/join.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/templates/join.html'));
-});
-
-app.listen(process.env.PORT || 3000, () => {
-    console.log('Server is running on port 3000');
 });
