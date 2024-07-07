@@ -17,7 +17,10 @@
     content: 'Environmental Sustainability';
     animation: Namechanger 5s infinite;
 }
-
+#donation{
+    height: auto;
+    background-color: var(--sec-clr);
+}
 @-webkit-keyframes Namechanger {
     0% { content: 'Environmental Sustainability'; }
     60% { content: 'And based Upon'; }
@@ -194,6 +197,7 @@ border-radius: 4%;
     max-width: 600px;
     margin: 50px auto;
     padding: 2rem;
+    height: auto;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
