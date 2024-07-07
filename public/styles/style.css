@@ -48,6 +48,7 @@ body {
 .Main-Page {
     height: 99vh;
     background-color: var(--sec-clr);
+
 }
 .other-Page {
     height: auto;
