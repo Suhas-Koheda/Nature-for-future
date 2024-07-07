@@ -14,25 +14,15 @@ The **Environmental Action Hub** is a comprehensive platform designed to bring t
 - **Discussion Boards:** Engage in discussions on various environmental topics (e.g., renewable energy, waste management, conservation).
 - **Collaboration Spaces:** Collaborate on projects and share success stories.
 
-### 3. Resource Library
-- **Educational Materials:** Access research papers, guides, and educational resources on climate action and sustainable practices.
-- **Webinars & Workshops:** Links to online courses and events.
 
-### 4. Volunteer and Donation Opportunities
+### 3. Volunteer and Donation Opportunities
 - **Volunteer Listings:** Find volunteer opportunities with various environmental organizations.
 - **Donation Platform:** Secure platform for supporting climate action projects and events.
 
-### 5. Networking and Collaboration
+### 4. Networking and Collaboration
 - **Directory:** Find environmental organizations, activists, and experts.
 - **Networking Tools:** Connect and form partnerships for larger initiatives.
 
-### 6. Interactive Map
-- **Event Visualization:** See ongoing and upcoming events globally.
-- **Action Areas:** Highlight areas in need of environmental action.
-
-### 7. Clean Energy Projects
-- **Promotion:** Support and promote clean energy projects and innovations.
-- **Case Studies:** Read success stories from around the world.
 
 ## Potential Impact
 
